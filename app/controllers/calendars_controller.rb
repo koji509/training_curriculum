@@ -31,8 +31,8 @@ class CalendarsController < ApplicationController
 
     7.times do |x|
       today_plans = []
-      plan = plans.map do |plan|
-        today_plans.push(plan.plan) if plan.date == @todays_date + x
+        plan = plans.map do |plan|
+          today_plans.push(plan.plan) if plan.date == @todays_date + x
       end
 
       wday_num = 0  # wdayメソッドを用いて取得した数値
