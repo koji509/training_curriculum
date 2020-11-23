@@ -36,8 +36,7 @@ class CalendarsController < ApplicationController
       end
 
       wday_num = 0  # wdayメソッドを用いて取得した数値
-      if #「wday_numが7を超えている場合」という条件式
-        wday_num = get_week -7
+      if wday_num >= get_week -7
       end
 
       days = { month: (@todays_date + x).month, date: (@todays_date+x).day, plans: today_plans, wday: wdays}
